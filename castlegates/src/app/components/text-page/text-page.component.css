@@ -16,7 +16,9 @@ app-carousel {
 }
 .container-fluid { 
     position: absolute;
-    top: 5rem;
+    top: 10rem;
+    height: 90vh !important;
+    width: 100vw;
 }
 .logo {
     line-height: 60px;
@@ -74,14 +76,7 @@ nav ul li a {
     color: #fff;
     display: none;
 }
-.container-fluid {
-    height: 100vh !important;
-    width: 100%;
-    background-image: url('/assets/1674616(1).png');
-    background-position: bottom;
-    background-repeat:no-repeat;
-    background-size: cover;
-}
+
 h1 {
     color: white;
 }
@@ -93,7 +88,7 @@ h1 {
     header {
         background-image: none;
         margin: 0 auto;
-        height: 15vh;
+        height: 8vh;
     }
     .logo {
      display: none;
@@ -115,11 +110,7 @@ h1 {
 
     .showing {
           max-height: 34em;
-    }
-    .container-fluid {
-        background-image: none;
-    }
-
+    }  
     nav ul li {
           box-sizing: border-box;
           display: block;
@@ -135,15 +126,7 @@ h1 {
     .menu-icon {
           display: block;
     }
-
-    app-card {
-        display: block;
-        margin: 0 auto;
-    }
-    .container-fluid col {
-        margin: 0;
-        text-align: center;
-    }
+  
     p{
         width: 100vw;
     }

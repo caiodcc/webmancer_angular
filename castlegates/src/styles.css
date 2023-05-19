@@ -1,21 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import "~bootstrap/dist/css/bootstrap.css";
-
+/* Utilities */
+.h100 {
+    height: 100vh;
+}
+/* Presets */
 * {
     box-sizing: border-box;
     font-family: 'Libre Baskerville', serif;
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #121212;
+    color: #121212;
+}
+a { 
+    text-decoration: none;
+    color: #121212;
+}
+a:hover {
+    color: red;
+}
+ul {
+    list-style: none;
+}
+
 /* Defines a black background behind a text */
 .blackground {
     font-size: 1.1rem;
+    position: relative;
     color: white;
     background-color: rgba(0, 0, 0, 0.95);
     border-radius: 1rem;
     padding: 2rem;
+    overflow:hidden;
+    height: 60vh;
+    width: 50vw;
+}
+.blackground > p {
+    position: relative;
+    width: 100%;
 }
 .obliqueSpan {
     font-size: 1.5rem
+
 }

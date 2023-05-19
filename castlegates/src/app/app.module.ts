@@ -8,6 +8,9 @@ import { CardComponent } from './components/partials/card/card.component';
 import { LoadingComponent } from './components/partials/loading/loading.component';
 import { ComentariosComponent } from './components/partials/comentarios/comentarios.component';
 import { CarouselComponent } from './components/partials/carousel/carousel.component';
+import { CreationPageComponent } from './components/creation-page/creation-page.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -16,11 +19,15 @@ import { CarouselComponent } from './components/partials/carousel/carousel.compo
     CardComponent,
     LoadingComponent,
     ComentariosComponent,
-    CarouselComponent
+    CarouselComponent,
+    CreationPageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

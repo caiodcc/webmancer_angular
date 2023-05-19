@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class CarouselComponent {
 
+
+  constructor(private renderer: Renderer2){
+
+  }
+  
+ngAfterViewInit() {
+  const firstSlide = document.querySelector('#myCarousel .carousel-item');
+  this.renderer.addClass(firstSlide, 'active');
+}
 }
