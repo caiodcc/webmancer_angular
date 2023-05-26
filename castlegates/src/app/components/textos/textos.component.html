@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="row">
+        <ul class="col list-group ">
+            <li *ngFor="let article of articles" class="list-group-item d-flex flex-row justify-content-start text-center">
+              <h3>{{ article.title }}</h3>
+              <p class="ms-5">Tags: <span  *ngFor="let tag of article.tags" class="badge badge-primary mr-1">{{ tag }}</span></p>
+              <p class="ms-5">Autor: {{ article.author }}</p>
+              <p class="ms-5">Data: {{ article.data }}</p>
+            </li>
+          </ul>
+    </div>
+    
+  </div>
+  

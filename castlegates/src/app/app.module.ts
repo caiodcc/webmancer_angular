@@ -10,7 +10,12 @@ import { ComentariosComponent } from './components/partials/comentarios/comentar
 import { CarouselComponent } from './components/partials/carousel/carousel.component';
 import { CreationPageComponent } from './components/creation-page/creation-page.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/partials/footer/footer.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { TextosComponent } from './components/textos/textos.component';
+import { ProjectComponent } from './components/project/project.component';
+import { WhyNgComponent } from './components/why-ng/why-ng.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     ComentariosComponent,
     CarouselComponent,
     CreationPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    FooterComponent,
+    ContactPageComponent,
+    TextosComponent,
+    ProjectComponent,
+    WhyNgComponent
   ],
   imports: [
     BrowserModule,

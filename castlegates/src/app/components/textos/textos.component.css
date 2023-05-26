@@ -1,0 +1,17 @@
+.container {
+    background-color: white;
+}
+.container h3 {
+    font-size: 1.2rem;
+}
+.container li { 
+    height: 10vh ;
+    position: relative;
+    padding: 2rem;
+}
+.container p {
+
+}
+.container span {
+    color: black;
+}

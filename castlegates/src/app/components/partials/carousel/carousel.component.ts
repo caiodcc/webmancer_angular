@@ -7,13 +7,18 @@ import { Component, Renderer2} from '@angular/core';
 })
 export class CarouselComponent {
 
-
-  constructor(private renderer: Renderer2){
-
-  }
-  
-ngAfterViewInit() {
-  const firstSlide = document.querySelector('#myCarousel .carousel-item');
-  this.renderer.addClass(firstSlide, 'active');
-}
+  carouselItems = [
+    {
+      image: 'path/to/image1.jpg',
+      caption: 'Legenda 1'
+    },
+    {
+      image: 'path/to/image2.jpg',
+      caption: 'Legenda 2'
+    },
+    {
+      image: 'path/to/image3.jpg',
+      caption: 'Legenda 3'
+    }
+  ];
 }

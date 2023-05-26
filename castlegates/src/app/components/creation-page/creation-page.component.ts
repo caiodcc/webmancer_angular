@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-creation-page',
   templateUrl: './creation-page.component.html',
   styleUrls: ['./creation-page.component.css']
 })
-export class CreationPageComponent {
+export class CreationPageComponent implements OnInit {
+
+   dataAtual = new Date; 
+
+  ngOnInit() {
+    this.dataAtual.toDateString
+  }
 
 }
+
+

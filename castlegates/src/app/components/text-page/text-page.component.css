@@ -1,139 +1,23 @@
-header {
-    position: fixed;
-    width: 100%;
-    height: 10vh;
-    background-color: #000;
-    opacity: 2.5; 
-    z-index: 10;
+.row {
+  width: 100%;
+  height: 5vh;
+  background-color: white;
 }
-.menu {
-    background-color: rgba(0, 0, 0, 0.6);
+a {
+  color: black;
+  background-color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 20px;
 }
-app-carousel {
-    position: relative;
-    top: 65rem; 
-    z-index: 9;
+a:hover {
+  color: white;
+  background-color:#313638;
+  transition: 1.2s;
 }
-.container-fluid { 
-    position: absolute;
-    top: 10rem;
-    height: 90vh !important;
-    width: 100vw;
-}
-.logo {
-    line-height: 60px;
-    position: fixed;
-    float: left;
-    margin: 16px 46px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
-}
-
-nav ul {
-    line-height: 60px;
-    list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    padding-right: 40px;
-    transition: 1s;
-}
-
-nav.black ul {
-    background: #000;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 16px 40px;;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff ;
-    font-size: 1.2rem;
-}
-
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-}
-
-h1 {
-    color: white;
-}
-
-
-
-@media(max-width: 786px) {
-
-    header {
-        background-image: none;
-        margin: 0 auto;
-        height: 8vh;
-    }
-    .logo {
-     display: none;
-    }
-    nav {
-        margin: 0 auto;
-    }
-    nav ul {
-        width: 100%;
-        height: 100%;
-        background: #000;
-        padding: 0;
-        z-index: 10;
-    }
-
-    nav.black ul {
-          background: #000;
-    }
-
-    .showing {
-          max-height: 34em;
-    }  
-    nav ul li {
-          box-sizing: border-box;
-          display: block;
-          margin: 0 auto;
-          min-height: 50px;
-          padding: 0;
-          text-align: center;
-    }
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .menu-icon {
-          display: block;
-    }
-  
-    p{
-        width: 100vw;
-    }
-
-    h1 {
-        margin-bottom: 2rem;
-        text-align: center !important;
-    }
-
-}
+@media (max-width: 576px) {
+  #media {
+      position: absolute;
+      top: 115%;
+      
+  }}
