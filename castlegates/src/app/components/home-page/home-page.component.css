@@ -7,11 +7,7 @@
 .row {
     height: 60vh;
 }
-.row:last-child {
-    position: fixed;
-    
-    
-}
+
 .x-sign {
     font-size: 3rem;
 }

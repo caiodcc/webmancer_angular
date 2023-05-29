@@ -1,24 +1,118 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li *ngFor="let item of carouselItems; let i = index" [class.active]="i === 0" data-target="#myCarousel" [attr.data-slide-to]="i"></li>
-    </ol>
-    
-    <div class="carousel-inner">
-      <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [class.active]="i === 0">
-        <img [src]="item.image" class="d-block w-100" alt="Imagem {{ i+1 }}">
-        <div class="carousel-caption">
-          <h3>{{ item.caption }}</h3>
-        </div>
+
+<section class="timeline_area section_padding_130">
+  <div class="container mb-3">
+      <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-lg-6">
+              <!-- Section Heading-->
+              <div class="section_heading text-center mt-5">
+                
+                  <h3><em style="font-size: 2.3rem">O caminho percorrido até aqui!</em></h3>
+                  <div class="line"></div>
+              </div>
+          </div>
       </div>
-    </div>
-    
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
+      <div class="row">
+          <div class="col-12">
+              <!-- Timeline Area-->
+              <div class="apland-timeline-area">
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                      <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                          <p>Estamos aqui</p>
+                      </div>
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>Davinci Resolve, Desenvolvimento de API's no NodeJS, GIT e Angular</h6>
+                                      <p class="text-danger">Procurando inserção no mercado</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>RxJs, formulários Angular, ciclo de vida do Angular e NodeJS</h6>
+                                      <p>13/03/2023 a 09/05/2023</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>Django REST e Django, conceitos de Python e Lógica</h6>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                      <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                      
+                      </div>
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>Noções de ecommerce e Shopify</h6>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>Typescript, Java e protocolos HTTP</h6>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                      <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                          <p>2022</p>
+                      </div>
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>Javascript, Bootstrap e Angular</h6>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>HTML/CSS e PHP</h6>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6>Lógica de Programação por Nélio Alves</h6>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
-  
+</section>
