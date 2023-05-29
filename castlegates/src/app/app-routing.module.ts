@@ -4,15 +4,16 @@ import { CreationPageComponent } from './components/creation-page/creation-page.
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { TextosComponent } from './components/textos/textos.component';
-import { ProjectComponent } from './components/project/project.component';
+import { TextReadComponent } from './components/text-read/text-read.component';
+
 
 const routes: Routes = [
   {path: '', redirectTo:'/home', pathMatch: 'full'},
   {path: 'creation-page', component: CreationPageComponent},
   {path: 'home', component:HomePageComponent},
   {path: 'contact', component: ContactPageComponent},
-  {path: 'text', component: TextosComponent},
-  {path: 'project', component: ProjectComponent}
+  {path: 'collect', component: TextosComponent},
+  {path: 'text-read', component: TextReadComponent},
 ];
 
 @NgModule({

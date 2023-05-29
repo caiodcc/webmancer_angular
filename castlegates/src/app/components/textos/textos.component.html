@@ -1,14 +1,45 @@
 <div class="container mt-5">
-    <div class="row">
-        <ul class="col list-group ">
-            <li *ngFor="let article of articles" class="list-group-item d-flex flex-row justify-content-start text-center">
-              <h3>{{ article.title }}</h3>
-              <p class="ms-5">Tags: <span  *ngFor="let tag of article.tags" class="badge badge-primary mr-1">{{ tag }}</span></p>
-              <p class="ms-5">Autor: {{ article.author }}</p>
-              <p class="ms-5">Data: {{ article.data }}</p>
-            </li>
-          </ul>
+<div class="row-md d-flex justify-content-around align-items-center p-md-4">
+
+  <select class="form-select w-25 text-center" aria-label="Default select example">
+    <option selected>Procurar por Tag</option>
+    <option value="1">Tecnologia</option>
+    <option value="2">Filosofia</option>
+    <option value="3">Arte</option>
+    <option value="4">Cultura</option>
+  </select>
+  <div>
+  <label for="data" class="form-label">Procurar por data</label>
+  <input type="date" class="form-control">
+  </div>
+  <div class="text-center">
+  <label for="titulo" class="form-label">Buscar</label>
+  <input type="text" class="form-control">
+  </div>
+</div>
+
+<div class="row box h-50 bg-white no-gutters p-3">    
+  <div class="table-responsive">
+      <h1 class="text-center text-dark">Solve et Coagula</h1>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="text-dark text-center">Texto</th>
+            <th class="text-dark text-center">Data</th>
+            <th class="text-dark text-center">Tag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataTable">
+            <td class="text-dark text-center">{{ item.text }}</td>
+            <td class="text-dark text-center"><em class="text-dark">{{ item.date }}</em></td>
+            <td class="text-dark text-center"><em class="text-dark">{{ item.tag }}</em></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     
-  </div>
+</div>
+    </div>
+
   

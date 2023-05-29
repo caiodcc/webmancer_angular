@@ -6,25 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./textos.component.css']
 })
 export class TextosComponent {
-  articles = [
-    {
-      title: 'Artigo 1',
-      tags: ['Angular', 'Bootstrap', 'Responsividade'],
-      author: 'João',
-      data: new Date
-    },
-    {
-      title: 'Artigo 2',
-      tags: ['TypeScript', 'HTML', 'CSS'],
-      author: 'Maria',
-      data: new Date
-    },
-    {
-      title: 'Artigo 3',
-      tags: ['JavaScript', 'Frontend'],
-      author: 'Pedro',
-      data: new Date
-    }
-  ];
-
+  dataTable: any[] = [];
+  
+  constructor(){
+    this.dataTable = [
+      { text: 'Lorem ipsum', date: '2023-05-25', tag: 'Tag1' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Consectetur adipiscing elit', date: '2023-05-23', tag: 'Tag3' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+      { text: 'Dolor sit amet', date: '2023-05-24', tag: 'Tag2' },
+    ];
+  }
 }

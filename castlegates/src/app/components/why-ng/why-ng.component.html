@@ -1,20 +1,25 @@
 <div class="container row d-flex justify-content-start align-items-center mt-5">
     <div class="col-md-6">
 
-        <h1 class="text-center mt-2"><em>Por que escolhi o <span class="text-danger">Angular</span>?</em></h1>
+        <h1 class="text-center mt-2"> {{text2}}<span class="text-danger">Angular?
+        </span></h1>
         <div class="box">
             <h3 class="text-center">Contato</h3>
             <p class="p-1">Email: <span class="text-danger">dev.caio.marques@gmail.com</span></p>
             <p class="p-1">Celular: <span class="text-danger">+55 21 97402-6883</span></p>
-            <p class="p-1">Linkedin: <span class="text-danger">+55 21 97402-6883</span></p>
+            <p class="p-1"><a class="text-danger" href="linkedin.com">Linkedin</a></p>
             
         </div>
     </div>
-    <div class="col-md-6">
-        <p>Fui orientado a explorar o Angular pelo meu padrasto, que concentrou sua experiência de sênior em me conduzir a um início de estudos mais produtivo, o que talvez tenha sido 
-            o principal motivo para eu me familiarizar mais rapidamente com as mecânicas deste framework.<br>Minha postura curiosa e autodidata ainda me levou a explorar mais os escopos do desenvolvimento, 
-            possuo certificações em Java, Django, PHP entre algumas outras tecnologias que eu quis disponibilizar no meu mosaico de conhecimento para poder ter a minima noção e experiência.
-            <br>Entretando, acredito que o Angular seja meu "em casa" pela intimidade que possuo com a estrutura e o pragmatismo do framework.
+    <div class="col-md-6 text-center">
+        
+        <h5 class="text-danger">Language</h5>
+        <select class="mt-2 mb-2 form-select-sm mx-auto" aria-label="Disabled select example" [(ngModel)]="option" (change)="changeText()">
+            <option value="option1">English</option>
+            <option value="option2">Português</option>
+          </select>
+        <p>{{ text }}</p>
+     
     </div>
 
 </div>
