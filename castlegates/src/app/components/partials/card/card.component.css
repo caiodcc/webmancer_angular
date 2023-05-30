@@ -1,50 +1,49 @@
 .card {
-    position: absolute;
-    min-width:300px;
+    min-width: 300px;
     max-width: 300px;
-    min-height:400px;
-    top: 15%;
-}
-.card .box {
-    position:absolute;
-    top:42%;
-    left:0;
-    transform:translateY(-50%);
-    text-align:center;
-    padding:20px;
-    border: none;
+    min-height: 400px;
+    margin: 15% auto;
     background-color: white;
-    box-sizing:border-box;
-    width:100%;
-}
-.card .box .img {
-    width:120px;
-    height:120px;
-    margin:0 auto;
-    border-radius:50%;
-    overflow:hidden;
-}
-.card .box .img img {
-    width:100%;
-    height:100%;
-}
-.card .box h2 {
-    font-size:20px;
-    color:#000000;
-    margin:20px auto;
-}
-.card .box h2 span {
-    font-size:0.8rem;
-    background:#121212;
-    color:#ffffff;
-    display:inline-block;
+    border: none;
+  }
+  
+  .card .box {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card .box .img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .card .box .img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card .box h2 {
+    font-size: 20px;
+    color: #000000;
+    margin: 20px auto;
+  }
+  
+  .card .box h2 span {
+    font-size: 0.8rem;
+    background: #121212;
+    color: #ffffff;
+    display: inline-block;
     padding: 0.9rem;
-    border-radius:1.3rem;
-    
-}
-.card .box p {
-    color:#000000;
-}
-.card .box span {
-    display:inline-flex;
-}
+    border-radius: 1.3rem;
+  }
+  
+  .card .box p {
+    color: #000000;
+  }
+  
+  .card .box span {
+    display: inline-flex;
+  }

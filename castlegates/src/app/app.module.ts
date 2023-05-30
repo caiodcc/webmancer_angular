@@ -16,6 +16,8 @@ import { TextosComponent } from './components/textos/textos.component';
 import { WhyNgComponent } from './components/why-ng/why-ng.component'
 import { FormsModule } from '@angular/forms';
 import { TextReadComponent } from './components/text-read/text-read.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { TextReadComponent } from './components/text-read/text-read.component';
     ContactPageComponent,
     TextosComponent,
     WhyNgComponent,
-    TextReadComponent
+    TextReadComponent,
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

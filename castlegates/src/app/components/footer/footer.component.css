@@ -1,0 +1,16 @@
+.app-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Altura do footer */
+    background-color: #f8f8f8;
+  }
+  
+  .app-footer .container-fluid {
+    height: 100%;
+  }
+  
+  .app-footer .row {
+    height: 100%;
+    align-items: center;
+  }

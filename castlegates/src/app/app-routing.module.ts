@@ -5,6 +5,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { TextosComponent } from './components/textos/textos.component';
 import { TextReadComponent } from './components/text-read/text-read.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactPageComponent},
   {path: 'collect', component: TextosComponent},
   {path: 'text-read', component: TextReadComponent},
+  {path: 'projects', component: ProjectsComponent}
 ];
 
 @NgModule({

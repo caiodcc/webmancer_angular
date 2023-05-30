@@ -1,0 +1,25 @@
+<div class="container-md">
+    <div class="row">
+      <div class="col mx-auto">
+        <h1 class="text-danger text-center mt-5">Project Collection</h1>
+      </div>
+    </div>
+        <div class="row text-white mt-5" *ngFor="let item of projects">
+          <div class="col-md-4">
+            <img src="{{ item.img }}" alt="Imagem" class="img-fluid">
+          </div>
+          <div class="col-md-8">
+            <h4 class="text-center text-danger mb-4">{{ item.nome }}</h4>
+            <p class="text-center">{{ item.descricao }}</p>
+            <p class="text-center">Tag: <span class="text-danger">{{ item.tag }}</span></p>
+            <p class="text-center mb-5">Data: {{ item.data }}</p>
+            <p class="text-center"><a href="home">Acessar  <fa-icon [icon]="iconGit" size="1x"></fa-icon></a></p>
+            
+          </div>
+        </div>
+      </div>
+      
+
+
+      
+  
