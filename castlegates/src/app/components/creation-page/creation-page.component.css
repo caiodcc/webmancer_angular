@@ -1,51 +1,40 @@
-.container .box {
-    position: absolute !important;
-    margin-top: 20rem;
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
 }
-.row {
-    height: 60%;
-    margin-top: 10rem;
+.container {
+
+    height: 110vh;
+}
+
+select {
+    color: black;
+}
+table {
+    color: white;
+    margin-bottom: 300px;
+}
+label {
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem
+}
+input {
+    margin-bottom: 0.5rem
 }
 textarea {
-    height: 20vh;
-    width: 100%;
-    font-size: 1.3rem;
-    padding: 1.5rem;
-}
-.btn {
-    min-width: 200px;
-    font-size: 1.5rem;
-    max-width: 200px;
-    height: 4rem;
     padding: 1rem;
 }
-.btn-light:hover{
-    background-color: black;
-    cursor: pointer;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-    transition: 1.7s;
-} 
-
-.btn-dark {
-    background-color: black;
+button {
+    margin-left: 17rem;
+    margin-top: 2rem;
 }
-.btn-dark:hover{
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-    transition: 1.7s;
-} 
-.ms-6 {
-    position: relative !important;
-    left: 50rem;
+select {
+    padding: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    margin-right: 0.7rem;
+    
 }
-@media only screen and (max-width: 600px) {
-    .ms-6 {
-      left: 3vw;
-      top:3vh;
-    }
-  }  

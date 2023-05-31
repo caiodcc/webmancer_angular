@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TextService } from 'src/app/services/texto.service';
 
 @Component({
   selector: 'app-textos',
@@ -6,43 +7,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./textos.component.css']
 })
 export class TextosComponent {
-  dataTable: any[]; // Array para armazenar os dados do JSON
-  filteredData: any[]; // Array para armazenar os resultados filtrados
-  selectedDate: string; // Propriedade para armazenar a data selecionada
-  searchText: string; // Propriedade para armazenar o texto de busca
-  selectedTag: string; // Propriedade para armazenar a tag selecionada
+  dataTable: any[]; 
+  texts: any[] = []; 
+  filteredData: any[] = []; 
+  selectedDate: string;
+  searchText: string; 
+  selectedTag: string; 
 
-  constructor() {
-    // Aqui você pode carregar seus dados do JSON, por exemplo:
-    this.dataTable = [
-      { text: 'Texto 1', date: '2023-05-01', tag: 'Tecnologia' },
-      { text: 'Texto 2', date: '2023-05-02', tag: 'Filosofia' },
-      { text: 'Texto 3', date: '2023-05-03', tag: 'Arte' },
-      // ... mais dados do JSON
-    ];
+  constructor( private textService: TextService) {
 
-    // Inicialmente, os resultados filtrados serão iguais aos dados completos
-    this.filteredData = this.dataTable;
+  }
+  ngOnInit(){
+    this.texts = this.textService.getAllTexts();
   }
 
   filterData(searchText: string, searchTag: string, searchDate: string) {
-    this.filteredData = this.dataTable.filter(item => {
-      // Filtrar por texto
-      if (searchText && !item.text.toLowerCase().includes(searchText.toLowerCase())) {
+    this.filteredData = this.texts.filter((item) => {
+      // Verificar se o texto contém a tag selecionada
+      if (this.selectedTag && item.tag !== this.selectedTag) {
         return false;
       }
-      
-      // Filtrar por tag
-      if (searchTag && item.tag !== searchTag) {
+  
+      // Verificar se o texto contém o texto de busca
+      if (searchText && !item.text.includes(searchText)) {
         return false;
       }
-
-      // Filtrar por data
-      if (searchDate && item.date !== searchDate) {
-        return false;
-      }
-
+  
+      // Todos os filtros passaram, manter o item no array filtrado
       return true;
     });
   }
+
 }
