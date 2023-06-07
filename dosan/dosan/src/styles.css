@@ -1,0 +1,20 @@
+/* Dependencies and variables */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,400&display=swap');
+
+:root {
+    --main-bg-color: #121212;
+    --main-font-color: white;
+    --main-side-color: cyan;
+    --font-main:  'Prompt', sans-serif;
+    --font-write: font-family: 'Cormorant Garamond', serif;
+}
+/* Preset */
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box ;
+}

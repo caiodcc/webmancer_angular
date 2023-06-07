@@ -1,14 +1,18 @@
 <div class="container">
   <div class="row flex-wrap">
     <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center" id="media">
-      <h1 class="mb-5 mt-4">Welcome to <span class="text-danger">Webmancer</span></h1>
-      <h3>Technology and art</h3><br>
-      <p class="p-2">Articles, poetry, guides and reviews.</p>
+      <h1 class="mb-5 mt-4">{{titulo}}<span class="text-danger">Webmancer</span></h1>
+      <h3>{{subtituloUm}}</h3><br>
+      <p class="p-2">{{subtituloDois}}</p>
       <div class="mt-3 d-flex flex-row justify-content-around align-items-center w-100">
         <fa-icon [icon]="iconGit" size="6x"></fa-icon>
         <fa-icon [icon]="iconWp" size="6x"></fa-icon>
         <fa-icon [icon]="iconLink" size="6x"></fa-icon>
       </div>
+      <select class="mt-5 mb-2 form-select-sm mx-auto" aria-label="Disabled select example" [(ngModel)]="option" (change)="changeText()">
+        <option value="option1">Português</option>
+        <option value="option2">English</option>
+      </select>
     </div>
     <div class="col-12 col-md-4 mt-4 mt-md-0 ">
       <app-card></app-card>
@@ -16,26 +20,14 @@
   </div>
   <div class="row">
     <div class="col-12 col-md-8 d-flex flex-column align-items-center mt-4">
-      <h1 class="mb-4 mt-5"><span class="text-danger">Who am I?</span></h1>
-      <p>My name is Caio Marques, a 21-year-old web developer from Rio de Janeiro, Brazil, and this website is the
-        result of about 14 months of study. During these months, i managed to superficially explore a lot of content
-        related to development. I also managed to map out the road i have ahead, and i learned that skill alone is not
-        enough. I integrated myself into the tech community and have found that many problems come from lack of
-        cooperation and communication, ironically, the main reason any large-scale progress is made.
-        <br>I intend to be different and exemplary for those who have or have had problems with how dynamic the tech
-        market can be.
-        <br>My values are<span class="text-danger"> respect, objectivity, communication, cooperation, and
-          inclusion.</span>
-        <br>Artistically, i write poems and texts because i am a developer by nature, and i also like to develop
-        philosophies. <br>
-        I am not afraid of putting my ego aside to ask for help or making mistakes, but i am not reckless too,
-        always seeking to recognize and expand my limits through self-education.
+      <h1 class="mb-4 mt-5"><span class="text-danger">{{tituloResumo}}</span></h1>
+      <p>{{resumo}}
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-12 col-md-4 mt-4">
-      <h1 class="ms-5"><span class="text-danger">Featured Texts</span></h1>
+      <h1 class="ms-5"><span class="text-danger">{{destaque}}</span></h1>
       <ul>
         <li></li>
       </ul>

@@ -12,8 +12,7 @@
             <h4 class="text-center text-danger mb-4">{{ item.nome }}</h4>
             <p class="text-center">{{ item.descricao }}</p>
             <p class="text-center">Tag: <span class="text-danger">{{ item.tag }}</span></p>
-            <p class="text-center mb-5">Data: {{ item.data }}</p>
-            <p class="text-center"><a href="home">Acessar  <fa-icon [icon]="iconGit" size="1x"></fa-icon></a></p>
+            <p class="text-center p-4"><a href="{{ item.link }}">Acessar  <fa-icon [icon]="iconGit" size="1x"></fa-icon></a></p>
             
           </div>
         </div>

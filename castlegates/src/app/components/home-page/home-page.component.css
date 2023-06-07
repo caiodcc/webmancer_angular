@@ -25,3 +25,13 @@
       text-align: center; 
     }
   }
+  select {
+    color: black;
+    max-width: 25vh;
+    max-height: 2.3rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+option {
+  color: black;
+}

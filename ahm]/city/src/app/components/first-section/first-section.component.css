@@ -1,0 +1,52 @@
+* {
+  color: var(--main-color);;
+}
+h2{
+    font-size: 5rem;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-top: 1px var(--main-color) solid;
+}
+h1 {
+    font-size: 2.7rem;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-top: var(--main-color) 1px solid;
+    box-shadow: rgba(236, 236, 240, 0.889) 0px 3px 1px 1px, rgba(246, 243, 243, 0.798) 0px 0px 0px 0px;
+}
+a{
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+ul li {
+    font-size: 2rem;
+    list-style-type: none;
+    text-decoration:underline ;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    position: relative;
+    
+}
+ul li:hover {
+    color: var(--terc-color);
+    cursor: pointer;
+}
+a:hover {
+    color: var(--terc-color);
+}
+p{
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+}
+.container {
+    position: fixed;
+    left: 14vw;
+    min-height: 50vh;
+}
+.col-12 { 
+    min-width: 80vw !important;
+    min-height: 50vh
+}
+.row {
+    min-height: 50vh
+}
