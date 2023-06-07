@@ -27,10 +27,7 @@ input {
 textarea {
     padding: 1rem;
 }
-button {
-    margin-left: 17rem;
-    margin-top: 2rem;
-}
+
 select {
     padding: 0.8rem;
     margin-left: 1rem;

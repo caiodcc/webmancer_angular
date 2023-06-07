@@ -2,29 +2,32 @@
     <h1>Criar Texto</h1>
   
     <form (submit)="addText()">
-      <div class="form-group">
+      <div class="form-group text-center">
         <label for="tag">Tag:</label>
         <select class="form-control w-25 mx-auto" id="tag" [(ngModel)]="selectedTag" name="tag">
           <option *ngFor="let tag of tags" [value]="tag">{{ tag }}</option>
         </select>
       </div>
   
-      <div class="form-group">
-        <label for="titulo">Título:</label>
+      <div class="form-group text-center">
+        <label for="titulo" >Título:</label>
         <input type="text" class="form-control w-25 mx-auto" id="titulo" [(ngModel)]="text.titulo" name="titulo">
       </div>
   
-      <div class="form-group">
+      <div class="form-group text-center">
         <label for="subtitulo">Subtítulo:</label>
         <input type="text" class="form-control w-25 mx-auto" id="subtitulo" [(ngModel)]="text.subtitulo" name="subtitulo">
       </div>
   
-      <div class="form-group">
+      <div class="form-group text-center">
         <label for="conteudo">Conteúdo:</label>
-        <textarea class="form-control w-25 mx-auto" id="conteudo" [(ngModel)]="text.conteudo" rows="10" name="conteudo"></textarea>
+        <textarea class="form-control mx-auto" id="conteudo" [(ngModel)]="text.conteudo" rows="10" name="conteudo"></textarea>
+      </div>
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-danger">Criar</button>
       </div>
   
-      <button type="submit" class="btn btn-danger">Criar</button>
+    
     </form>
   
     <h2>Textos</h2>
