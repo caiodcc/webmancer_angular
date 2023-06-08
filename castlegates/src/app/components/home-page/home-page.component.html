@@ -5,9 +5,9 @@
       <h3>{{subtituloUm}}</h3><br>
       <p class="p-2">{{subtituloDois}}</p>
       <div class="mt-3 d-flex flex-row justify-content-around align-items-center w-100">
-        <fa-icon [icon]="iconGit" size="6x"></fa-icon>
-        <fa-icon [icon]="iconWp" size="6x"></fa-icon>
-        <fa-icon [icon]="iconLink" size="6x"></fa-icon>
+      <a href="https://github.com/caiodcc"><fa-icon [icon]="iconGit" size="5x" [styles]="{'stroke': 'red', 'color': 'rgba(var(--bs-danger-rgb))'}"></fa-icon></a>
+      <a href="https://wa.me/5521974026883?text=Ol%C3%A1!"> <fa-icon [icon]="iconWp" [styles]="{'stroke': 'red', 'color': 'rgba(var(--bs-danger-rgb))'}" size="5x"></fa-icon></a>
+      <a href="https://www.linkedin.com/in/caio-marques-682446234/"> <fa-icon [icon]="iconLink" size="5x" [styles]="{'stroke': 'red', 'color': 'rgba(var(--bs-danger-rgb))'}"></fa-icon></a>
       </div>
       <select class="mt-5 mb-2 form-select-sm mx-auto" aria-label="Disabled select example" [(ngModel)]="option" (change)="changeText()">
         <option value="option1">Português</option>
@@ -23,14 +23,6 @@
       <h1 class="mb-4 mt-5"><span class="text-danger">{{tituloResumo}}</span></h1>
       <p>{{resumo}}
       </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-4 mt-4">
-      <h1 class="ms-5"><span class="text-danger">{{destaque}}</span></h1>
-      <ul>
-        <li></li>
-      </ul>
     </div>
   </div>
 </div>

@@ -35,3 +35,16 @@
 option {
   color: black;
 }
+
+a{
+  border-radius: 0px;
+  padding: 1rem;
+}
+a:hover {
+  background-color: #fafafa;
+  border: none;
+  border-radius: 65%;
+  color: #313638;
+  transition: 0.6s ease-in-out;
+
+}
