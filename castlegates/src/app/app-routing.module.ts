@@ -8,14 +8,16 @@ import { TextReadComponent } from './components/text-read/text-read.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
 
+
 const routes: Routes = [
   {path: '', redirectTo:'/home', pathMatch: 'full'},
-  {path: 'creation-page', component: CreationPageComponent},
+  {path: 'takemebacktoeden-takemeback-toeden', component: CreationPageComponent},
   {path: 'home', component:HomePageComponent},
   {path: 'contact', component: ContactPageComponent},
   {path: 'collect', component: TextosComponent},
-  {path: 'text-read', component: TextReadComponent},
-  {path: 'projects', component: ProjectsComponent}
+  {path: 'text-read:id', component: TextReadComponent},
+  {path: 'projects', component: ProjectsComponent},
+ 
 ];
 
 @NgModule({

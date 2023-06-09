@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { TextReadComponent } from './components/text-read/text-read.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ConfirmPageComponent } from './components/confirm-page/confirm-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
     WhyNgComponent,
     TextReadComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    ConfirmPageComponent
   ],
   imports: [
     BrowserModule,
